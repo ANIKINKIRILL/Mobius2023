@@ -17,11 +17,11 @@ dependencies {
 }
 
 android {
-    compileSdkVersion(31)
+    compileSdkVersion(32)
     defaultConfig {
         applicationId = "com.example.mobius.android"
         minSdkVersion(24)
-        targetSdkVersion(31)
+        targetSdkVersion(32)
         versionCode = 1
         versionName = "1.0-SNAPSHOT"
     }

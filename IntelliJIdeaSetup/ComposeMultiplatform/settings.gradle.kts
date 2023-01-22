@@ -18,4 +18,4 @@ pluginManagement {
 
 rootProject.name = "ComposeMultiplatform"
 
-include(":android", ":desktop", ":common")
+include(":android", ":desktop", ":common", ":ios")

@@ -1,21 +1,17 @@
 import org.jetbrains.compose.compose
+import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
-    id("com.android.library")
 }
 
-group = "com.example.mobius"
+group = "com.example.kmmcompose"
 version = "1.0-SNAPSHOT"
 
+
 kotlin {
-    android()
-    jvm("desktop") {
-        compilations.all {
-            kotlinOptions.jvmTarget = "11"
-        }
-    }
     iosX64("uikitX64") {
         binaries {
             executable() {
@@ -45,58 +41,50 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(compose.runtime)
-                api(compose.foundation)
-                api(compose.material)
+                implementation(compose.ui)
+                implementation(compose.foundation)
+                implementation(compose.material)
+                implementation(compose.runtime)
             }
         }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
-        }
-        val androidMain by getting {
-            dependencies {
-                api("androidx.appcompat:appcompat:1.2.0")
-                api("androidx.core:core-ktx:1.3.1")
-            }
-        }
-        val androidTest by getting {
-            dependencies {
-                implementation("junit:junit:4.13")
-            }
-        }
-        val desktopMain by getting {
-            dependencies {
-                api(compose.preview)
-            }
-        }
-        val desktopTest by getting
 
         val iosMain by creating {
+            dependencies {
+                implementation(project(":common"))
+            }
             dependsOn(commonMain)
         }
-        val uikitMain by creating {
+        val uikitX64Main by getting {
             dependsOn(iosMain)
         }
-        val uikitX64Main by getting {
-            dependsOn(uikitMain)
-        }
         val uikitArm64Main by getting {
-            dependsOn(uikitMain)
+            dependsOn(iosMain)
         }
     }
 }
 
-android {
-    compileSdkVersion(32)
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(32)
+compose.experimental {
+    uikit.application {
+        bundleIdPrefix = "com.example.mobius.android"
+        projectName = "ComposeiOSProject"
+        deployConfigurations {
+            // Usage ./gradlew ios:iosDeployIPhone13Debug
+            simulator("IPhone13") {
+                device = org.jetbrains.compose.experimental.dsl.IOSDevices.IPHONE_13_PRO
+            }
+        }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
+}
+
+kotlin {
+    targets.withType<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget> {
+        binaries.all {
+            // TODO: the current compose binary surprises LLVM, so disable checks for now.
+            freeCompilerArgs += "-Xdisable-phases=VerifyBitcode"
+        }
     }
 }
