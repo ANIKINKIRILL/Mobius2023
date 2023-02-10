@@ -25,6 +25,7 @@ import io.github.skeptick.libres.images.Image
 internal fun Card(
     modifier: Modifier = Modifier,
     userItems: List<Image>,
+    onButtonClick: () -> Unit,
 ) {
     androidx.compose.material.Card(
         modifier = modifier.fillMaxWidth().wrapContentHeight(),
@@ -69,7 +70,7 @@ internal fun Card(
                 horizontalArrangement = Arrangement.Center
             ) {
                 Button(
-                    onClick = {},
+                    onClick = onButtonClick,
                     colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xFFF5F4F2)),
                     contentPadding = PaddingValues(18.dp),
                     modifier = Modifier.fillMaxWidth(),
