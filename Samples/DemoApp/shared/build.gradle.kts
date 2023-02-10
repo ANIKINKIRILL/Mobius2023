@@ -65,7 +65,7 @@ kotlin {
 libres {
     generatedClassName = "MainRes"
     generateNamedArguments = true
-    baseLocaleLanguageCode = "ru"
+    baseLocaleLanguageCode = "en"
 }
 
 android {

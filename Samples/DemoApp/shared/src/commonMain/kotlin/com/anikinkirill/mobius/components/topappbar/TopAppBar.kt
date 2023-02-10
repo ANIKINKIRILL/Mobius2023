@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.anikinkirill.mobius.MainRes
 import com.anikinkirill.mobius.components.topappbar.actions.PlatformTopAppBarDropdownMenu
 
 @Composable
@@ -28,7 +29,7 @@ internal fun TopAppBar(
                 horizontalArrangement = Arrangement.Center,
                 verticalAlignment = Alignment.CenterVertically,
             ) {
-                Text(text = "Mobius 2023")
+                Text(text = MainRes.string.top_app_bar_name)
             }
         },
         backgroundColor = Color.White,
