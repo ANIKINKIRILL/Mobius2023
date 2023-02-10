@@ -16,13 +16,14 @@ import com.anikinkirill.mobius.components.card.Card
 import com.anikinkirill.mobius.components.topappbar.TopAppBar
 import com.anikinkirill.mobius.model.UserOrder
 
-private val orders = listOf(
-    UserOrder(userItems = listOf("1", "2")),
-    UserOrder(userItems = listOf("1", "2")),
-    UserOrder(userItems = listOf("1", "2")),
-    UserOrder(userItems = listOf("1", "2")),
-    UserOrder(userItems = listOf("1", "2")),
-)
+private val orders = List(5) {
+    UserOrder(
+        userItems = listOf(
+            MainRes.image.ic_watches,
+            MainRes.image.ic_alice,
+        )
+    )
+}
 
 @Composable
 internal fun App() {

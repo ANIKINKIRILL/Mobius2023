@@ -17,11 +17,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.anikinkirill.mobius.MainRes
+import io.github.skeptick.libres.compose.painterResource
+import io.github.skeptick.libres.images.Image
 
 @Composable
 internal fun Card(
     modifier: Modifier = Modifier,
-    userItems: List<String>,
+    userItems: List<Image>,
 ) {
     androidx.compose.material.Card(
         modifier = modifier.fillMaxWidth().wrapContentHeight(),
@@ -53,7 +56,7 @@ internal fun Card(
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     items(items = userItems) { userItem ->
                         Image(
-                            imageVector = Icons.Default.Person,
+                            painter = painterResource(userItem),
                             contentDescription = "item",
                             modifier = Modifier.size(56.dp)
                         )
