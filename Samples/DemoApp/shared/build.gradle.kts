@@ -39,7 +39,12 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("androidx.compose.runtime:runtime:1.2.1")
+                implementation("androidx.compose.material:material:1.2.1")
+            }
+        }
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
