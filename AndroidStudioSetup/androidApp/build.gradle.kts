@@ -19,11 +19,11 @@ kotlin {
 
 android {
     namespace = "com.anikinkirill.mobius.android"
-    compileSdk = 32
+    compileSdk = 33
     defaultConfig {
         applicationId = "com.anikinkirill.mobius.android"
         minSdk = 29
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
     }
@@ -31,7 +31,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.0"
+        kotlinCompilerExtensionVersion = "1.4.6"
     }
     packagingOptions {
         resources {
