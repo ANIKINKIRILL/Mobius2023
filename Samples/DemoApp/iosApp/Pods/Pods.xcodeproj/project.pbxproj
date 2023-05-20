@@ -9,12 +9,12 @@
 /* Begin PBXAggregateTarget section */
 		8777C9F6889E59EFFD631D80AEE9048B /* shared */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 3893C0F30CBD7714E566CBCAE2CB40C6 /* Build configuration list for PBXAggregateTarget "shared" */;
+			buildConfigurationList = 7306475028954973B1A766E9453F0941 /* Build configuration list for PBXAggregateTarget "shared" */;
 			buildPhases = (
-				141834123C591738295C8895C3DA99E5 /* [CP-User] Build shared */,
+				8FB9E7BA50D467B6D9FE83206DB3F116 /* [CP-User] Build shared */,
 			);
 			dependencies = (
-				7756F4C7DA915B67DBCE7A59006C80D2 /* PBXTargetDependency */,
+				507A5F5DF3EF1D216BC6456A0D96CE1B /* PBXTargetDependency */,
 			);
 			name = shared;
 		};
@@ -24,23 +24,23 @@
 		648F16425FEF89525AE0325F5A984B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8749C8E8DC500B064FA0BC7A78C38A2A /* Pods-iosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3BD8CAFAE0C8EB92CD04E5FC24E61 /* Pods-iosApp-dummy.m */; };
 		8801CBFD38B946597BD07145B2EEFC9F /* Pods-iosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E8DFC7821955063C886C71258CBE53 /* Pods-iosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF3E8D554062CF71F6F210631D849768 /* LibresShared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD306627797FAD8C7F4FF5D53AEE0B2 /* LibresShared.xcassets */; };
+		E03D0DEB1D9538C484CD312D170EA824 /* LibresShared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD306627797FAD8C7F4FF5D53AEE0B2 /* LibresShared.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A2A8984C984F6768DB20FA74F4A0325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A58E1BE02FA31BF7779A65592F5F01E;
+			remoteInfo = "shared-LibresShared";
+		};
 		3B3DD97234976EAE23DEF848B521F3BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8777C9F6889E59EFFD631D80AEE9048B;
 			remoteInfo = shared;
-		};
-		8B40027E5744462087B4D8CAF00D5703 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A58E1BE02FA31BF7779A65592F5F01E;
-			remoteInfo = "shared-LibresShared";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,7 +67,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		539B6C08287FF8D319EA0D22F85AFB43 /* Frameworks */ = {
+		7DE162AF6D7272B9FA7F8C3885F9E389 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,11 +209,11 @@
 /* Begin PBXNativeTarget section */
 		6A58E1BE02FA31BF7779A65592F5F01E /* shared-LibresShared */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED9BDCDB4711832A3BE0E55077F6B1D1 /* Build configuration list for PBXNativeTarget "shared-LibresShared" */;
+			buildConfigurationList = E85BC0C3D1AC4E15A98BBB0DD5E9638B /* Build configuration list for PBXNativeTarget "shared-LibresShared" */;
 			buildPhases = (
-				8B018F221AB59137D2B14AA7C634DDC6 /* Sources */,
-				539B6C08287FF8D319EA0D22F85AFB43 /* Frameworks */,
-				B4D5868B493BFEE9CD91692DCF324532 /* Resources */,
+				3A573055CA85EF62AEAE51425E5D640A /* Sources */,
+				7DE162AF6D7272B9FA7F8C3885F9E389 /* Frameworks */,
+				3728689E75CBB28291781B23C0BD2A71 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -280,18 +280,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4D5868B493BFEE9CD91692DCF324532 /* Resources */ = {
+		3728689E75CBB28291781B23C0BD2A71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3E8D554062CF71F6F210631D849768 /* LibresShared.xcassets in Resources */,
+				E03D0DEB1D9538C484CD312D170EA824 /* LibresShared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		141834123C591738295C8895C3DA99E5 /* [CP-User] Build shared */ = {
+		8FB9E7BA50D467B6D9FE83206DB3F116 /* [CP-User] Build shared */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,12 +299,12 @@
 			name = "[CP-User] Build shared";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+			shellScript = "                if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n                  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B018F221AB59137D2B14AA7C634DDC6 /* Sources */ = {
+		3A573055CA85EF62AEAE51425E5D640A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,17 +322,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		507A5F5DF3EF1D216BC6456A0D96CE1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "shared-LibresShared";
+			target = 6A58E1BE02FA31BF7779A65592F5F01E /* shared-LibresShared */;
+			targetProxy = 0A2A8984C984F6768DB20FA74F4A0325 /* PBXContainerItemProxy */;
+		};
 		6D08CF75140F29DD6A6970543E494B09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
 			targetProxy = 3B3DD97234976EAE23DEF848B521F3BD /* PBXContainerItemProxy */;
-		};
-		7756F4C7DA915B67DBCE7A59006C80D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "shared-LibresShared";
-			target = 6A58E1BE02FA31BF7779A65592F5F01E /* shared-LibresShared */;
-			targetProxy = 8B40027E5744462087B4D8CAF00D5703 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,40 +372,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2F198166D9CCF4E3B922329132597D66 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CC135EF3FFB4CE57F23C20DDA8272EE /* shared.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3B2EB6ACC1AD8024CDDFAEE2905E29A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CC135EF3FFB4CE57F23C20DDA8272EE /* shared.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/shared";
-				IBSC_MODULE = shared;
-				INFOPLIST_FILE = "Target Support Files/shared/ResourceBundle-LibresShared-shared-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				PRODUCT_NAME = LibresShared;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -468,6 +434,40 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5F28D3A802A45BB9D534307B221A779B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D517715DDB8B6F69A4F09A51F5FB76DA /* shared.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/shared";
+				IBSC_MODULE = shared;
+				INFOPLIST_FILE = "Target Support Files/shared/ResourceBundle-LibresShared-shared-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				PRODUCT_NAME = LibresShared;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6F3A47A09C04B66C456F3E91073C0E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC135EF3FFB4CE57F23C20DDA8272EE /* shared.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -537,23 +537,6 @@
 			};
 			name = Debug;
 		};
-		A67D0E432B7DD3D988F8D7C032AA364C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D517715DDB8B6F69A4F09A51F5FB76DA /* shared.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		AF088B6CD92A52AC4DCB62DEEC871231 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F981EE0C95E2DFD40CA16F05D2C35B8A /* Pods-iosApp.debug.xcconfig */;
@@ -591,9 +574,26 @@
 			};
 			name = Debug;
 		};
-		BBBA1A323ED292B540F482ECDD59BCD4 /* Debug */ = {
+		E1C2703494393CC1C7E7D0D88AE6EBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D517715DDB8B6F69A4F09A51F5FB76DA /* shared.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6F7893D5DA2A5B60B14420F6CC65D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC135EF3FFB4CE57F23C20DDA8272EE /* shared.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/shared";
 				IBSC_MODULE = shared;
@@ -605,25 +605,25 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3893C0F30CBD7714E566CBCAE2CB40C6 /* Build configuration list for PBXAggregateTarget "shared" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A67D0E432B7DD3D988F8D7C032AA364C /* Debug */,
-				2F198166D9CCF4E3B922329132597D66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
 				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7306475028954973B1A766E9453F0941 /* Build configuration list for PBXAggregateTarget "shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C2703494393CC1C7E7D0D88AE6EBAA /* Debug */,
+				6F3A47A09C04B66C456F3E91073C0E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -637,11 +637,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED9BDCDB4711832A3BE0E55077F6B1D1 /* Build configuration list for PBXNativeTarget "shared-LibresShared" */ = {
+		E85BC0C3D1AC4E15A98BBB0DD5E9638B /* Build configuration list for PBXNativeTarget "shared-LibresShared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBBA1A323ED292B540F482ECDD59BCD4 /* Debug */,
-				3B2EB6ACC1AD8024CDDFAEE2905E29A9 /* Release */,
+				5F28D3A802A45BB9D534307B221A779B /* Debug */,
+				E6F7893D5DA2A5B60B14420F6CC65D57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
